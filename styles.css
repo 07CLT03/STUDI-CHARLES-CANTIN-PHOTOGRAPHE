@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Vujahday+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 1 - LANDING PAGE  */
+.logo-img {
+  margin-top: -25px;
+}
+
+.landing-photo {
+  background-image: url(images/charlescantin2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+.landing-photo .photographer-title-1 {
+  color: #806c6c;
+  font-size: 7vh;
+  word-spacing: 12px;
+  letter-spacing: 4.5px;
+  text-shadow: black 1px 1px 1px;
+}
+.landing-photo .photographer-title-2 {
+  border-color: #806c6c;
+  padding: 20px;
+  font-size: 6vh;
+  letter-spacing: 5px;
+  border: solid;
+  border-color: white;
+  padding: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+/* 2 - GALLERIE  */
+.galery-photos {
+  margin-top: 250px;
+  margin-bottom: 350px;
+  /* SIZE IMAGE COVER GALERIE BREAKPOINTS */
+}
+.galery-photos .cover-img1 {
+  display: block;
+}
+.galery-photos .cover-img2 {
+  display: block;
+}
+.galery-photos .box-img {
+  position: relative;
+  transition: 0.5s ease;
+}
+.galery-photos .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: #272320;
+  background: linear-gradient(to bottom right, #272320, #AD9270);
+}
+.galery-photos .caption {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.galery-photos .box-img:hover .overlay {
+  opacity: 0.6;
+}
+@media screen and (min-width: 1300px) {
+  .galery-photos .cover-img1 {
+    width: 695px;
+    height: 550px;
+  }
+  .galery-photos .cover-img2 {
+    min-width: 680px;
+    height: 550px;
+  }
+  .galery-photos .cover-img3 {
+    min-width: 680px;
+    height: 550px;
+  }
+  .galery-photos .cover-img5 {
+    height: 732px;
+  }
+  .galery-photos .cover-img6 {
+    height: 732px;
+  }
+}
+
+/* SECTION 3 - CHARLES CANTIN PRESENTATION  */
+/* SECTION 3 - CHARLES CANTIN PRESENTATION  
+
+
+.self-presentation {
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: lightgray;
+
+    /* LEFT SIDE   
+
+    .left-wrapper-img {
+
+      padding-top: 100px;
+      padding-bottom: 100px;
+
+
+      .charles-picture {
+        width: 35vh;
+        height: 35vh;
+        border-radius: 50%;
+        z-index: 10;
+      }  
+
+      .bg-form-decoration-1 {
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+      }
+
+      .bg-form-decoration-2 {
+        left: 25%;
+        top: 1%;
+        background-color: #806c6c;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+      }
+
+      .bg-form-decoration-3 {
+        background-color: grey;
+        right: 20%;
+        top: 10%;
+        border-radius: 50%;
+      }
+
+      .bg-form-decoration-4 {
+        background-color: grey;
+        border-radius: 50%;
+      }
+
+      .bg-form-decoration-5 {
+        background-color:$background-color;
+        left: 65%;
+        bottom: 17%;
+        border-radius: 50%;
+      }
+
+      .bg-form-decoration-6 {
+        border-radius: 50%;
+        bottom: 5%;
+        left: 15%;
+      }
+
+          /* MEDIAQUERIES ON SMALL DEVICE  
+
+          @media screen and (max-width:576px) {
+
+           .self-presentation {
+
+              height: 900px;
+              margin-bottom: 1050px;
+              display: block;
+
+                .left-wrapper-img {
+
+                  padding-top: 0;
+                  padding-bottom: 50px; 
+
+                    .bg-form-decoration-1 {
+                      left: 5%;
+                      width: 50px;
+                      height: 50px;
+                    }
+                    .bg-form-decoration-2 {
+                      left: 20%;
+                      top: -5%;
+                    }
+                    .bg-form-decoration-3 {
+                      left:50%;
+                      top: 5%;
+                      width: 100px;
+                      height: 100px;
+                    }
+                }
+
+
+                .right-wrapper-text {
+
+                  margin-bottom: 550px;
+
+                  p {
+                    position: relative;
+                  }
+                }
+
+
+            } 
+          } 
+
+
+          @media screen and (min-width:576px) {
+
+            .self-presentation {
+              height: 50px;
+              margin-top: 500px;
+              margin-bottom: 550px;
+
+            }
+          }
+
+        @media screen and (min-width:768px) {
+
+          .bg-form-decoration-1 {
+            left: 10%;
+          }
+          .bg-form-decoration-2 {
+            left: 20%;
+            top: 1%;
+          }
+
+          .bg-form-decoration-3 {
+            left:50%;
+            top: 15%;
+          }
+        }
+
+    }
+
+
+    /* RIGHT SIDE   
+
+
+    .right-wrapper-text {
+
+
+      h3 {
+        color: #806c6c; 
+        font-size: 2em;
+        word-spacing: 5px;
+      }
+
+      p {
+        text-align: justify;
+        font-size: 1.5em;
+      }
+
+
+
+        /* MEDIAQUERIES ON SMALL DEVICE  
+
+
+        @media screen and (min-width:576px) {
+            h3 {
+            font-size: 2.7rem;
+            word-spacing: 0px;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+
+          .right-wrapper-text {
+
+            h3 {
+              font-size: 3.5rem;
+              word-spacing: 5px;
+            }
+
+            p {
+              position: absolute;
+              z-index: 15;
+            }
+
+            .bg-form-decoration-7 {
+              background-color: #806c6c;
+              right: 3%;
+              position: absolute;
+              border-radius: 50%;
+              bottom: 5%;
+              z-index: 2;
+            }
+
+            .bg-form-decoration-8 {
+              background-color: grey;
+              position: absolute;
+              border-radius: 50%;
+              right:7%;
+              bottom: 12%;
+              z-index: 1;
+            }
+
+            .logo-bxl-decoration {
+              position: absolute;
+              bottom: 1%;
+              left: 16%;
+
+              .img-bxl {
+                width: 10px;
+                height: 10px;
+              }
+
+            }
+
+
+          }
+        }
+
+
+        @media screen and (min-width:992px) {
+          h3 {
+            font-size: 4em;
+          }
+
+          p {
+            font-size: 2em;
+          }
+        }
+
+
+
+    }
+
+}
+
+*/
+/* SECTION 4 - FOOTER  */
+.footer-informations {
+  margin-top: 250px;
+}
+.footer-informations .footer-info-title {
+  font-family: "Vujahday Script", cursive;
+  word-spacing: 3.58px;
+  letter-spacing: 3.5px;
+}
+.footer-informations .copyright {
+  background-color: #272320;
+}
+@media screen and (max-width: 576px) {
+  .footer-informations .copyright {
+    font-size: 7em;
+  }
+}/*# sourceMappingURL=styles.css.map */
