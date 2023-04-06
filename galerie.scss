@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Vujahday+Script&display=swap');
+
+$background-color:#806c6c; 
+$main-border-color:#806c6c; 
+$quote-police: 'Homemade Apple', cursive; 
+$main-title-police:'Vujahday Script', cursive;
+
+
+
+
+
+/* SECTION 2 - GALLERY NAVIGATION LINK  */
+
+
+.navigation-wrapper {
+
+    .gallery-link {
+      font-family: 'Vujahday Script', cursive;
+      font-size: 2.2em;
+    }
+
+
+    li a::after {
+      content: '';
+      width: 0;
+      height: 3px;
+      background-color:#806c6c; 
+      margin-top: 5px;
+      display: block;
+    }
+
+
+    li a:hover::after {
+      width: 100%;
+      transition: width 0.3s ease;
+    }
+
+}
+
+
+      /* MEDIA QUERIES  */
+      @media screen and (max-width:576px) {
+          .navigation-wrapper{
+            
+              li {
+                margin-top:15px;
+
+                  .gallery-link a{
+                  font-size: 1em;
+                }
+            }
+        
+          }  
+        }   
+
+      @media screen and (min-width:576px) {
+          .navigation-wrapper{
+            max-width: 90%;
+         
+                .gallery-link a {
+                font-size: 0.8em;
+                
+              }
+            }
+        } 
+
+      @media screen and (min-width:768px) {
+          .navigation-wrapper{
+            max-width: 90%;
+         
+                .gallery-link a {
+                font-size: 0.9em;
+                
+              }
+            }
+        } 
+
+      @media screen and (min-width:992px) {
+          .navigation-wrapper{
+            max-width: 90%;
+  
+            
+                .gallery-link a {
+                font-size: 1.1em;
+                
+              }
+            }
+        } 
+
+
+/* SECTION 3 - GALLERIE IMAGES  */
+
+.animated-gallerie {
+
+    .quote{
+      font-family: $quote-police;
+      line-height: 55px;
+    }
+
+
+
+
+
+    /* MEDIA QUERIES - SIZE OF IMAGES  */
+
+    @media screen and (max-width:576px) {
+
+      .img-1 {
+        width: 100%;
+        height: 400px;
+      }
+      .img-2 {
+        width: 100%;
+        height: 550px;
+        margin-top: 4px;
+      }
+      .img-3 {
+        width: 100%;
+        height: 650px;
+      }
+      .img-4 {
+        width: 100%;
+        margin-top: 4px;
+      }
+      .img-4-bis {
+        width: 100%;
+        margin-top: 4px;
+        height: 600px;
+      }
+      .img-5 {
+        width: 100%;
+        height: 600px;
+      }
+      .img-6 {
+        width: 100%;
+        height: 600px;
+        margin-top: 4px;
+      }
+      .img-7 {
+        width: 100%;
+      }
+    }
+
+
+    @media screen and (min-width:576px) {
+
+      .img-1 {
+        width: 100%;
+        height: 300px;
+     
+      }
+      .img-2 {
+        width: 100%;
+        height: 300px;
+     
+      }
+      .img-3 {
+        width: 100%;
+        height: 450px;
+     
+      }
+      .img-4-bis {
+        width: 100%;
+        height: 450px;
+      
+      }
+      .img-5 {
+        width: 100%;
+        height: 400px;
+       
+      }
+      .img-6 {
+        width: 100%;
+        height: 400px;
+      
+      }
+      .img-7 {
+        width: 415px;
+        height: 533px;
+      }
+      .img-7-bis {
+        width: 100%;
+        height: 320px;
+      }
+    }
+
+    @media screen and (min-width:768px) {
+      .img-1 {
+        width: 100%;
+        height: 500px;
+        padding-right: 3px;
+      }
+      .img-2 {
+        width: 100%;
+        height: 500px;
+        padding-left: 3px;
+      }
+      .img-3 {
+        width: 500px;
+        height: 600px;
+        margin-top: 1px;
+        padding-right: 3px;
+      }
+      .img-4 {
+        width: 760px;
+        height: 500px;
+      }
+      .img-4-bis {
+        width: 100%;
+        height: 600px;
+        margin-top: 2px;
+        padding-left: 3px;
+      }
+      .img-5 {
+        width: 100%;
+        height: 533px;
+        padding-right: 3px;
+      }
+      .img-6 {
+        width: 100%;
+        height: 533px;
+        padding-left: 3px;
+      }
+      .img-7-bis {
+        width: 100%;
+        height: 350px;
+      }
+
+    }
+
+    
+    @media screen and (min-width:992px) {
+      .img-1 {
+        height: 500px;
+        padding-right: 5px;
+      }
+      .img-2 {
+        width: 450px;
+        height: 500px;
+      }
+
+      .img-3 {
+        width: 500px;
+        height: 800px;
+      }
+      .img-4 {
+        width: 670px;
+        height: 380px;
+        padding-left: 5px;
+      }
+      .img-5 {
+        width: 415px;
+        height: 500px;
+        padding-right: 5px;
+      }
+      .img-6 {
+        width: 415px;
+        height: 500px;
+        padding-right: 5px;
+      }
+      .img-7 {
+        width: 415px;
+        height: 500px;
+      }
+
+    }
+
+    
+
+
+  @media screen and (min-width:1200px) {
+    .img-1 {
+      width: 900px;
+      height: 550px;
+      padding-right: 10px;
+    }
+    .img-2 {
+      width: 450px;
+      height: 550px;
+    }
+
+    .img-3 {
+      width: 550px;
+      height: 830px;
+    }
+    .img-4 {
+      width: 770px;
+      height: 450px;
+      padding-left: 10px;
+    }
+    .img-5 {
+      width: 430px;
+      height: 580px;
+    }
+    .img-6 {
+      width: 430px;
+      height: 580px;
+    }
+    .img-7 {
+      width: 430px;
+      height: 580px;
+    }
+  }
+
+}
+
+
+
+
+
+/* SECTION 4 - FOOTER  */
+
+
+.footer-informations {
+  margin-top: 250px;
+  margin-bottom: 50px;
+
+    .footer-info-title {
+      font-family: $main-title-police ;
+      word-spacing: 3.58px;
+      letter-spacing: 3.5px;
+    }
+
+
+
+    @media screen and (max-width:576px) {
+      .copyright {
+        font-size: 7em;
+      }
+    }
+
+}  
+
+.copyright {
+  background-color: #806c6c;
+}
+  
