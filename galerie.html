@@ -59,19 +59,17 @@
 
 
 
-<!-- NAVIGATION BAR GALLERIE  -->
+<!-- NAVIGATION BUTTON GALLERIE  -->
 
 <div class="container-fluid my-sm-4 my-md-5">
-  <div class="navigation-wrapper py-5 mx-sm-4 mx-md-5">
-    <ul class="d-sm-flex flex-wrap justify-content-center list-unstyled text-center">
-      <li class="gallery-link px-sm-3 px-md-4"><a href="" class="text-dark text-decoration-non">Bébé</a></li>
-      <li class="gallery-link px-sm-3 px-md-4"><a href="" class="text-dark text-decoration-none">Mariage</a></li>
-      <li class="gallery-link px-sm-3 px-md-4"><a href="" class="text-dark text-decoration-none">Portrait</a></li>
-      <li class="gallery-link px-sm-3 px-md-4"><a href="" class="text-dark text-decoration-none">Couple</a></li>
-      <li class="gallery-link px-sm-3 px-md-4"><a href="" class="text-dark text-decoration-none">Grossesse</a></li>
-      <li class="gallery-link px-sm-3 px-md-4"><a href="" class="text-dark text-decoration-none">Famille</a></li>
-      <li class="gallery-link px-sm-3 px-md-4"><a href="" class="text-dark text-decoration-none">Baptême</a></li>
-    </ul>
+  <div class="navigation-wrapper py-5 mx-sm-4 mx-md-5 d-sm-flex flex-wrap justify-content-center list-unstyled text-center">
+      <button type="button" class="btn btn-link text-dark text-decoration-none gallery-link caption-btn-1 px-sm-3 px-md-4">Portrait</button>
+      <button type="button" class="btn btn-link text-dark text-decoration-none gallery-link caption-btn-2 px-sm-3 px-md-4">Mariage</button>
+      <button type="button" class="btn btn-link text-dark text-decoration-none gallery-link caption-btn-3 px-sm-3 px-md-4">Bébé</button>
+      <button type="button" class="btn btn-link text-dark text-decoration-none gallery-link caption-btn-4 px-sm-3 px-md-4">Couple</button>
+      <button type="button" class="btn btn-link text-dark text-decoration-none gallery-link caption-btn-5 px-sm-3 px-md-4">Grossesse</button>
+      <button type="button" class="btn btn-link text-dark text-decoration-none gallery-link caption-btn-6 px-sm-3 px-md-4">Famille</button>
+      <button type="button" class="btn btn-link text-dark text-decoration-none gallery-link caption-btn-7 px-sm-3 px-md-4">Baptême</button>
   </div>
 </div>
 
@@ -82,7 +80,7 @@
   <div class="img-wrapper">
     <div class="row">
       <div class="col-12 col-sm-6 col-lg-8 px-0 ps-sm-1">
-        <img src="images/portrait/portrait7.jpg" class="img-1 img-fluid" alt="portrait femme">
+        <img src="images/portrait/portrait7.jpg" id="img-1" class="img-1 img-fluid" alt="portrait femme">
       </div>
       <div class="col-12  col-sm-6 col-lg-4 px-0 ps-sm-1 pe-sm-1">
         <img src="images/portrait/portrait5.jpg" class="img-2 img-fluid" alt="portrait homme">
@@ -126,57 +124,10 @@
 
 
 
-<!-- FOOTER AREA  -->
-
-<footer>
-  <div class="container-fluid footer-informations d-md-flex justify-content-around text-center text-dark">
-     <!-- LEFT FOOTER AREA  -->
-    <div class="left-footer-section">
-        <h3 class="footer-info-title text-uppercase my-4 fw-semibold">Où me contacter ?</h3>
-        <ul class="list-unstyled">
-          <li>Rue de la paix n°15, 1000 Bruxelles </li>
-          <li>charles.cantin@hotmail.be</li>
-          <li>04 77/ 00.00.00</li>
-        </ul>
-    </div>  
-     <!-- MIDDLE FOOTER AREA  -->
-    <div class="middle-footer-section">
-        <h3 class="footer-info-title text-uppercase my-4 fw-semibold">Liens importants</h3>
-        <ul class="list-unstyled">
-          <li class="footer-link-nav"><a href="index.html" target="_blank" class="text-dark text-decoration-none"> Accueil</a></li>
-          <li class="footer-link-nav"><a href="galerie.html" target="_blank" class="text-dark text-decoration-none">Galerie</a></li>
-          <li class="footer-link-nav"><a href="tarifs&prestations.html" target="_blank" class="text-dark text-decoration-none">Tarifs & Prestations</a></li>
-          <li class="footer-link-nav"><a href="contact.html" target="_blank" class="text-dark text-decoration-none">Contact</a></li>
-          <li class="footer-link-nav"><a href="mentionslegales.html" target="_blank" class="text-dark text-decoration-none">Mentions légales</a></li>
-        </ul>
-    </div>
-     <!-- RIGHT FOOTER AREA  -->
-    <div class="right-footer-section">
-        <h3 class="footer-info-title text-uppercase my-4 fw-semibold">Devenons amis</h3>
-        <ul class="d-flex justify-content-evenly mt-5 list-unstyled">
-          <li>
-            <a href="http://instagram.com" target="_blank" class="text-dark"><i class="bi bi-instagram fs-2"></i></a>
-          </li>
-          <li>
-            <a href="http://linkedin.com" target="_blank" class="text-dark"><i class="bi bi-linkedin fs-2"></i></a>
-          </li> 
-          <li>
-            <a href="http://facebook.com" target="_blank" class="text-dark"><i class="bi bi-facebook fs-2"></i></a>
-          </li>
-        </ul>
-    </div>
-  </div>
-
-  <!-- COPYRIGHT AREA  -->
-  <div class="container-fluid copyright">
-    <p class="text-center fs-6 text-white mx-5 py-2">Copyright @ Photos by Pixabay - Website design with <i class="bi bi-balloon-heart"></i> by Charlotte Lafont </p>
-  </div>
-
-</footer>
-
 
 </body>
 
+<script src="gallerie.js"></script>
 <script src="https://kit.fontawesome.com/91faa21b21.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </html>
