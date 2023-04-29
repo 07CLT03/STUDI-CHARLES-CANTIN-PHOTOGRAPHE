@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Vujahday+Script&display=swap");
-/* SECTION 2 - GALLERY NAVIGATION LINK  */
+/* SECTION 2 - GALLERY NAVIGATION LINK + HOVER EFFECT */
 .navigation-wrapper .gallery-link {
   font-family: "Vujahday Script", cursive;
-  font-size: 2.2em;
+  font-size: 0.8em;
 }
-.navigation-wrapper li a::after {
+.navigation-wrapper .btn-link::after {
   content: "";
   width: 0;
   height: 3px;
@@ -13,42 +13,36 @@
   margin-top: 5px;
   display: block;
 }
-.navigation-wrapper li a:hover::after {
+.navigation-wrapper .btn-link:hover::after {
   width: 100%;
   transition: width 0.3s ease;
 }
 
 /* MEDIA QUERIES  */
 @media screen and (max-width: 576px) {
-  .navigation-wrapper li {
-    margin-top: 15px;
-  }
-  .navigation-wrapper li .gallery-link a {
-    font-size: 1em;
+  .navigation-wrapper .btn-link {
+    font-size: 1.5em;
   }
 }
 @media screen and (min-width: 576px) {
   .navigation-wrapper {
     max-width: 90%;
   }
-  .navigation-wrapper .gallery-link a {
-    font-size: 0.8em;
+  .navigation-wrapper .btn-link {
+    font-size: 1.6em;
   }
 }
 @media screen and (min-width: 768px) {
-  .navigation-wrapper {
-    max-width: 90%;
-  }
-  .navigation-wrapper .gallery-link a {
-    font-size: 0.9em;
+  .navigation-wrapper .gallery-link {
+    font-size: 2em;
   }
 }
 @media screen and (min-width: 992px) {
   .navigation-wrapper {
     max-width: 90%;
   }
-  .navigation-wrapper .gallery-link a {
-    font-size: 1.1em;
+  .navigation-wrapper .gallery-link {
+    font-size: 2.4em;
   }
 }
 /* SECTION 3 - GALLERIE IMAGES  */
@@ -211,7 +205,7 @@
     padding-right: 10px;
   }
   .animated-gallerie .img-2 {
-    width: 450px;
+    width: 452px;
     height: 550px;
   }
   .animated-gallerie .img-3 {
@@ -224,11 +218,11 @@
     padding-left: 10px;
   }
   .animated-gallerie .img-5 {
-    width: 430px;
+    width: 435px;
     height: 580px;
   }
   .animated-gallerie .img-6 {
-    width: 430px;
+    width: 432px;
     height: 580px;
   }
   .animated-gallerie .img-7 {
@@ -237,7 +231,11 @@
   }
 }
 
-/* SECTION 4 - FOOTER  */
+.ButtonUp {
+  margin-top: 200px;
+}
+
+/* SECTION 5 - FOOTER  */
 .footer-informations {
   margin-top: 250px;
   margin-bottom: 50px;

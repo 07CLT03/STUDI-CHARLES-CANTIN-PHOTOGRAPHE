@@ -10,18 +10,17 @@ $main-title-police:'Vujahday Script', cursive;
 
 
 
-/* SECTION 2 - GALLERY NAVIGATION LINK  */
+/* SECTION 2 - GALLERY NAVIGATION LINK + HOVER EFFECT */
 
 
 .navigation-wrapper {
 
     .gallery-link {
       font-family: 'Vujahday Script', cursive;
-      font-size: 2.2em;
+      font-size: 0.8em;
     }
 
-
-    li a::after {
+    .btn-link::after {
       content: '';
       width: 0;
       height: 3px;
@@ -30,36 +29,30 @@ $main-title-police:'Vujahday Script', cursive;
       display: block;
     }
 
-
-    li a:hover::after {
+    .btn-link:hover::after {
       width: 100%;
       transition: width 0.3s ease;
     }
-
 }
 
-
       /* MEDIA QUERIES  */
+    
       @media screen and (max-width:576px) {
-          .navigation-wrapper{
-            
-              li {
-                margin-top:15px;
-
-                  .gallery-link a{
-                  font-size: 1em;
-                }
+        .navigation-wrapper{
+ 
+              .btn-link {
+              font-size: 1.5em;
+              
             }
-        
-          }  
-        }   
+          }
+      } 
 
       @media screen and (min-width:576px) {
           .navigation-wrapper{
             max-width: 90%;
          
-                .gallery-link a {
-                font-size: 0.8em;
+                .btn-link {
+                font-size: 1.6em;
                 
               }
             }
@@ -67,23 +60,20 @@ $main-title-police:'Vujahday Script', cursive;
 
       @media screen and (min-width:768px) {
           .navigation-wrapper{
-            max-width: 90%;
-         
-                .gallery-link a {
-                font-size: 0.9em;
+            
+                .gallery-link {
+                font-size: 2em;
                 
               }
             }
         } 
 
       @media screen and (min-width:992px) {
-          .navigation-wrapper{
+        .navigation-wrapper{
             max-width: 90%;
-  
             
-                .gallery-link a {
-                font-size: 1.1em;
-                
+                .gallery-link {
+                font-size: 2.4em; 
               }
             }
         } 
@@ -278,7 +268,7 @@ $main-title-police:'Vujahday Script', cursive;
       padding-right: 10px;
     }
     .img-2 {
-      width: 450px;
+      width: 452px;
       height: 550px;
     }
 
@@ -292,11 +282,11 @@ $main-title-police:'Vujahday Script', cursive;
       padding-left: 10px;
     }
     .img-5 {
-      width: 430px;
+      width: 435px;
       height: 580px;
     }
     .img-6 {
-      width: 430px;
+      width: 432px;
       height: 580px;
     }
     .img-7 {
@@ -311,7 +301,13 @@ $main-title-police:'Vujahday Script', cursive;
 
 
 
-/* SECTION 4 - FOOTER  */
+.ButtonUp {
+  margin-top: 200px;
+}
+
+
+
+/* SECTION 5 - FOOTER  */
 
 
 .footer-informations {
